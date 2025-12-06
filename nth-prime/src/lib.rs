@@ -1,3 +1,7 @@
 pub fn nth(n: u32) -> u32 {
-    todo!("What is the 0-indexed {n}th prime number?")
+    // There is no formula for finding primes so we will need to check each number
+    // 2 is the only even prime, return it if 0 is passed in
+    let primes: Vec<u32> = vec![2];
+
+    while primes.len() != (n + 1) as usize {}
 }
