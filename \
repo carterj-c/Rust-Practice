@@ -5,17 +5,5 @@ pub fn nth(n: u32) -> u32 {
 
     while primes.len() != (n + 1) as usize {
         let mut prime_candidate: u32 = 3;
-
-        if is_prime(prime_candidate) {
-            primes.push(prime_candidate);
-        }
-    }
-}
-
-fn is_prime(prime_candidate: u32) -> bool {
-    for candidate in 3..prime_candidate {
-        if prime_candidate.is_multiple_of(candidate) {
-            return true;
-        }
     }
 }
